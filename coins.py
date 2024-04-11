@@ -1,0 +1,19 @@
+amount = float(input())
+amount_stotinki = amount * 100
+coins_2lv = amount_stotinki // 200
+amount_stotinki %= 200
+coins_1lv = amount_stotinki // 100
+amount_stotinki %= 100
+coins_50st = amount_stotinki // 50
+amount_stotinki %= 50
+coins_20st = amount_stotinki // 20
+amount_stotinki %= 20
+coins_10st = amount_stotinki // 10
+amount_stotinki %= 10
+coins_5st = amount_stotinki // 5
+amount_stotinki %= 5
+coins_2st = amount_stotinki // 2
+amount_stotinki %= 2
+coins_1st = amount_stotinki
+total_number_coins = coins_2lv + coins_1lv + coins_50st + coins_20st + coins_10st + coins_5st + coins_2st + coins_1st
+print(f"{total_number_coins:.0f}")
